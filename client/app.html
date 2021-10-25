@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HoChiMinh City Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+
+<form class="form">
+    <h2>Quận/Huyện</h2>
+	<div>
+        <select class="location" name="" id="uiLocations">
+            <option value="" disabled="disabled" selected="selected">Chọn vị trí</option>
+                <option>Quận 1</option>
+                <option>Quận 2</option>
+                <option>Quận 3</option>
+                <option>Quận 4</option>
+                <option>Quận 5</option>
+                <option>Quận 6</option>
+                <option>Quận 7</option>
+                <option>Quận 8</option>
+                <option>Quận 9</option>
+                <option>Quận 10</option>
+                <option>Quận 11</option>
+                <option>Quận 12</option>
+                <option>Quận Bình Tân</option>
+                <option>Quận Bình Thạnh</option>
+                <option>Quận Gò Vấp</option>
+                <option>Quận Phú Nhuận</option>
+                <option>Quận Tân Bình</option>
+                <option>Quận Tân Phú</option>
+                <option>Quận Thủ Đức</option>
+                <option>Huyện Bình Chánh</option>
+                <option>Huyện Củ Chi</option>
+                <option>Huyện Hóc Môn</option>
+                <option>Huyện Nhà Bè</option>
+                
+        </select>
+    </div>
+
+    <h2>Giấy tờ pháp lý</h2>
+	<div>
+        <select class="location" name="" id="uiStatus">
+            <option value="" disabled="disabled" selected="selected">Chọn trạng thái</option>
+                <option>Chưa có sổ</option>
+                <option>Đang chờ sổ</option>
+                <option>Đã có sổ</option>       
+        </select>
+    </div>
+
+	
+</form>
+
+<form class="form">
+
+    <h2>Diện tích (m2)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="50">
+
+	<h2>Số phòng</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+        <label for="radio-bhk-3">3</label>
+	</div>
+
+	<h2>Nhà vệ sinh</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+	</div>
+	
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Dự đoán giá</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+</form>
+</body>
+</html>
