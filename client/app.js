@@ -63,4 +63,4 @@ function onClickedEstimatePrice() {
     });
   }
   
-  //window.onload = onPageLoad;
+  window.onload = onPageLoad;
